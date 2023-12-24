@@ -22,6 +22,23 @@ body{
      
 }
 
+.anim
+{
+    opacity: 0;
+    transform: translatex(30px);
+    animation: moveright 0.5s linear forwards;
+}
+
+@keyframes moveright
+{
+   
+    100%
+    {
+        opacity: 1;
+        transform: translatex(0px);
+    }
+}
+
 
 
 
@@ -33,6 +50,7 @@ body{
 .logo
 {
     font-size: 30px;
+    animation-delay: 0.5s;
     
     
 }
@@ -49,6 +67,7 @@ nav ul li
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    animation-delay: 0.5s;
 }
 
 nav ul li a{
@@ -88,6 +107,7 @@ nav ul li a:hover::after{
     margin-top: 40%;
     position: relative;
     top: -170px;
+    animation-delay: 1.5s;
     
     
     
@@ -100,6 +120,8 @@ nav ul li a:hover::after{
     margin-top: 20px;
     margin-top: -350px;
     width: 100%;
+    animation-delay: 1s;
+
  
 
 }
@@ -136,6 +158,22 @@ nav ul li a:hover::after{
 
 .about-col-1{
     flex-basis: 35%;
+}
+
+.anim2
+{
+    opacity: 0;
+    transform: translateX(-40px);
+    animation: huuur 0.8s linear forwards;
+}
+
+@keyframes huuur
+{
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 .about-col-1 img{
