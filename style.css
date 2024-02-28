@@ -167,21 +167,28 @@ nav ul li a:hover::after{
     flex-basis: 35%;
 }
 
-.anim2
+.anim2 img
 {
-    opacity: 0;
-    transform: translateX(-40px);
-    animation: huuur 0.8s linear forwards;
+    animation: scale-in linear;
+    animation-timeline: view();
 }
 
-@keyframes huuur
+@keyframes scale-in
 {
-    100%
+    0%
     {
-        opacity: 1;
-        transform: translateX(0px);
+        
+       transform: translateX(-350px);
+    }
+    50%
+    {
+       
+        transform: translateX(-50px);
+        
     }
 }
+
+
 
 .about-col-1 img{
     width: 100%;
@@ -191,12 +198,36 @@ nav ul li a:hover::after{
 .about-col-2
 {
     flex-basis: 60%;
+    animation: fade linear;
+    animation-timeline:view();
+
 }
+
+
 .sub
 {
     font-size: 60px;
     font-weight: 600;
     color: #fff;
+    
+}
+
+@keyframes fade
+{
+    0%
+    {
+        
+       transform: translateX(500px);
+      
+    }
+
+    50%
+    {
+        
+        transform: translateX(-30px);
+        
+       
+    }
 }
 
 
