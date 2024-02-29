@@ -183,7 +183,7 @@ nav ul li a:hover::after{
     50%
     {
        
-        transform: translateX(-50px);
+        transform: translateX(0px);
         
     }
 }
@@ -216,19 +216,62 @@ nav ul li a:hover::after{
 {
     0%
     {
-        
-       transform: translateX(500px);
+        opacity: 0;
+       transform: translateY(200px);
       
     }
 
     50%
     {
-        
-        transform: translateX(-30px);
+        opacity: 1;
+        transform: translateY(0px);
         
        
     }
 }
+
+.work
+{
+    animation: slide-down linear;
+    animation-timeline: view();
+}
+
+@keyframes slide-down
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+
+    50%
+    {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+} 
+
+#lele
+{
+    animation: slide-up linear;
+    animation-timeline: view();
+}
+
+
+@keyframes slide-up
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(400px);
+    }
+
+    50%
+    {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+} 
 
 
 .tab-titles
@@ -432,11 +475,47 @@ nav ul li a:hover::after{
 .contact-left
 {
     flex-basis: 35%;
+    animation: left linear;
+    animation-timeline: view();
+}
+
+@keyframes left
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+
+    
+    50%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .contact-right
 {
     flex-basis: 60%;
+    animation: right linear;
+    animation-timeline: view();
+}
+
+@keyframes right
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+
+    
+    50%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 .contact-left p{
     margin-top: 30px;
