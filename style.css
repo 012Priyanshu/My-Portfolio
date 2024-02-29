@@ -217,7 +217,7 @@ nav ul li a:hover::after{
     0%
     {
         opacity: 0;
-       transform: translateY(200px);
+       transform: translateY(100px);
       
     }
 
@@ -507,7 +507,7 @@ nav ul li a:hover::after{
     0%
     {
         opacity: 0;
-        transform: translateY(-300px);
+        transform: translateY(-50px);
     }
 
     
